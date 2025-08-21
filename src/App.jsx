@@ -1,18 +1,12 @@
 import TodoList from "./Taskmanager";
+import "./App.css"; // make sure your CSS is linked
 
-function App(){
+function App() {
   return (
-    <div style={{
-    display: "flex",
-    flexDirection: "column",
-    // justifyContent: "center", // center vertically
-    marginTop:"100px",
-    alignItems: "center",     // center horizontally
-    height: "100vh",          // full viewport height
-    width: "100vw",           // full viewport width
-  }}>
-      <TodoList/>
+    <div className="todo-container">
+      <TodoList />
     </div>
-  )
+  );
 }
+
 export default App;
