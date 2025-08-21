@@ -1,0 +1,163 @@
+/* Main container */
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  /* width: 100%; */
+}
+
+/* Title */
+.todo-title {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+/* Input section */
+.todo-input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 15px;
+  width: 300px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.add-btn {
+  padding: 10px 20px;
+  background-color: #4cafef;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.add-btn:hover {
+  background-color: #2b87d1;
+}
+
+/* Filter buttons */
+.filter-buttons {
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  margin: 0 5px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  background: #4cafef;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-buttons button.active {
+  background: #1a81d6;
+  color: white;
+}
+
+.filter-buttons button:hover {
+  background: #1a81d6;
+}
+
+/* Task list */
+.task-list-title {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 500px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(0, 0, 0);
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.task-item:hover {
+  transform: scale(1.02);
+}
+
+/* Checkbox */
+.task-checkbox {
+  margin-right: 10px;
+}
+
+/* Completed tasks */
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Task text */
+.task-text {
+  flex-grow: 1;
+}
+
+/* Buttons inside tasks */
+.edit-btn,
+.remove-btn,
+.save-btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.edit-btn {
+  background: #ffc107;
+  color: white;
+}
+.edit-btn:hover {
+  background: #e0a800;
+}
+
+.remove-btn {
+  background: #dc3545;
+  color: white;
+}
+.remove-btn:hover {
+  background: #c82333;
+}
+
+.save-btn {
+  background: #28a745;
+  color: white;
+}
+.save-btn:hover {
+  background: #218838;
+}
+
+/* Edit input */
+.edit-input {
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #250c0c;
+}
